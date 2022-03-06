@@ -1,0 +1,48 @@
+import math
+
+def mnozenie(a, b):
+    return a * b
+def dzielenie(a, b):
+    return a / b
+def dodawanie(a, b):
+    return a + b
+def odejmowanie(a, b):
+    return a - b
+
+print("Wybierz działanie")
+print("1) Dodawanie")
+print("2) Odejmowanie")
+print("3) Mnożenie")
+print("4) Dzielenie")
+
+co_dalej = 'tak'
+
+while co_dalej != 'nie':
+    wybor = input("Wybierz co chcesz zrobić:  ")
+
+    if wybor == '1':
+        a = float(input("Podaj pierwszą liczbę: "))
+        b = float(input("Podaj drugą liczbę: "))
+        print(dodawanie(a, b))
+
+    elif wybor == '2':
+        a = float(input("Podaj pierwszą liczbę: "))
+        b = float(input("Podaj drugą liczbę: "))
+        print(odejmowanie(a, b))
+
+    elif wybor == '3':
+        a = float(input("Podaj pierwszą liczbę: "))
+        b = float(input("Podaj drugą liczbę: "))
+        print(mnozenie(a, b))
+
+    elif wybor == '4':
+        a = float(input("Podaj pierwszą liczbę: "))
+        b = float(input("Podaj drugą liczbę: "))
+        print(dzielenie(a, b))
+
+
+    co_dalej = input("Czy chcesz liczyć dalej? tak / nie")
+print("W takim razie miłego dnia :) ")
+
+
+
