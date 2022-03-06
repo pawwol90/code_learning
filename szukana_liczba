@@ -1,0 +1,13 @@
+szukanaLiczba = 40
+zgadywanaLiczba = 0
+
+while zgadywanaLiczba != szukanaLiczba:
+    zgadywanaLiczba = int(input("Odgadnij liczbę: "))
+    if (zgadywanaLiczba == szukanaLiczba):
+        print("BRAWO!!")
+    if (zgadywanaLiczba > szukanaLiczba):
+        print("za duża")
+    if (zgadywanaLiczba < szukanaLiczba):
+        print("za mała")
+
+
