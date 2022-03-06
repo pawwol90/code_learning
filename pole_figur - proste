@@ -1,0 +1,57 @@
+import math
+
+
+def pole_kwadratu(a):
+    return a * a
+
+
+def pole_prostokata(a, b):
+    return a * b
+
+
+def pole_kola(r):
+    return math.pi * r ** 2
+
+
+def pole_trojkata(a, h):
+    return 0.5 * a * h
+
+
+def pole_trapezu(a, b, h):
+    return (a + b) / 2 * h
+
+
+print("Wybierz figurę: ")
+print("1. kwadrat ")
+print("2. prostokąt ")
+print("3. koło ")
+print("4. trójkąt ")
+print("5. trapez")
+
+liczymy_dalej = 'tak'
+
+while liczymy_dalej != 'nie':
+    wybor = input("Wpisz numer bez kropki 1-5 ")
+
+    if wybor == '1':
+        a = float(input("podaj długośc boku: "))
+        print(pole_kwadratu(a))
+
+    elif wybor == '2':
+        a = float(input("podaj dlugosc boku a: "))
+        b = float(input("podaj dlubosc boku b: "))
+        print(pole_prostokata(a, b))
+    elif wybor == '3':
+        r = float(input("podaj dlugosc promienia: "))
+        print(pole_kola(r))
+    elif wybor == '4':
+        a = float(input("Podaj dlugosc boku: "))
+        h = float(input("podaj wysokosc"))
+        print(pole_trojkata(a, h))
+    elif wybor == '5':
+        a = float(input("podaj kr bok: "))
+        b = float(input("podaj dl bokL "))
+        h = float(input("podaj wys: "))
+        print(pole_trapezu(a, b, h))
+    liczymy_dalej = input("czy liczymy dalej? tak / nie: ")
+print("to nie")
